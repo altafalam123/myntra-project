@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.relative{
+    background-color:whitesmoke;
+    position: fixed;
+    width: 100vw;
+    /* flex-wrap: wrap; */
+}
+
+.img{
+    background-color: aliceblue;
+    margin-left:30px;
+    display;
+
+}
+
+.men{
+     margin-left:50px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+     
+}
+
+.women{
+    margin-left:150px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+}
+
+.kids{
+    margin-left:280px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+}
+
+.home{
+    margin-left:390px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+}
+
+.beauty{
+    margin-left:570px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+}
+
+.studio{
+    margin-left:700px;
+     margin-top:20px;
+     position: absolute;
+     border: none;
+}
+
+.user{
+    right:160px;
+    top: 15px;
+    position: absolute;
+}
+
+.profile{
+    position: absolute;
+    right:155px;
+    top: 45px;
+    font-size:15px;
+}
+
+.heart{
+    position: absolute;
+    right: 90px;
+    top: 15px;
+}
+
+.wish{
+    position: absolute;
+    right:82px;
+    top: 45px;
+    font-size:15px;
+}
+
+.bag{
+    position: absolute;
+    right: 23px;
+    top: 45px;
+}
+
+.bagg{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.search{
+    position: absolute;
+    right: 600px;
+    top: 15px;
+    border:solid 1px;
+}
+
+.image{
+    margin-top: 80px;
+    width:1400px;
+    margin-left: 60px;
+}
+
+.image2{
+    width:1400px;
+    margin-left:60px ;
+}
+
+.image3{
+    width:1400px;
+    margin-left:60px ;
+}
+
+.heading{
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    font-size:50px;
+    font-style: italic;
+    color: darkcyan;
+}
+.image4{
+    width:1300px;
+    margin-left:100px ;
+    margin-top: 20px;
+}
+
+.image5{
+    width:1300px;
+    margin-left:100px ;
+    margin-top: 30px;
+}
+
+.online{
+    color: cornflowerblue;
+    align-items: center;
+    justify-content:space-between;
+    display:grid;
+    display:inline;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+ .man{
+    margin-left: 200px;
+    color: white;
+
+
+} 
+
+.onlinee{
+    color: cornflowerblue;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    margin-top:-150px;
+    
+}
+
+.mann{
+    margin-left: 700px;
+    color: white;
+}
+
+.show{
+    display:none;
+
+}
+.men:hover .show{
+    display:block;
+}
+.topwear{
+   color: cornflowerblue;
+   margin-top:0px;
+   margin-left:10px;
+   
+}
+.div{
+    background-color: aliceblue;
+    display: flex;
+}
+
+.bottom{
+    margin-left: 40px;
+    color: cornflowerblue;
+}
+
+.bottom2{
+    margin-left: 40px;
+    color: cornflowerblue;
+}
+
+.women:hover .show{
+    display:block;
+}
+
+.kids:hover .show{
+    display:block;
+}
+
+.home:hover .show{
+    display:block;
+}
+
+.studio:hover .show{
+    display:block;
+}
+
+.beauty:hover .show{
+    display:block;
+}
+
+.maindiv{
+    background-color: rgba(0, 0, 0, 0.733);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    animation-name: bouncing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+   
+}
+.card{
+    height: 300px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+
+
+.card:hover{
+   transform: rotateY(180deg);
+   
+}
+
+
+
+
+.front, .back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius:40px;
+}
+
+@keyframes bouncing{
+    0%{
+      transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-50px);
+
+    }
+
+    100%{
+        transform: translateY(0px);
+
+    }
+}
+
+.back{
+    transform:rotateY(180deg);
+    background-color: rgba(255, 166, 0, 0.552);
+    box-shadow: -6px 1px 35px 0px   rgba(255, 166, 0, 0.552);
+}
+
+
+.altaf{
+    height: 100px;
+    margin-top: -40px;
+    border-radius: 50px;
+}
+
+.lorem{
+   margin-left: 30px;
+}
+.front{
+    background-color: rgba(57, 57, 241, 0.758);
+    box-shadow: -6px 1px 35px 0px   rgba(57, 57, 241, 0.758);
+}
+
+.card .front button{
+    background-color: rgba(57, 241, 238, 0.634) ;
+    border: none;
+    margin-top: 40px;
+    border-radius: 10px;
+}
